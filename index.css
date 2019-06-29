@@ -19,11 +19,14 @@ body {
     background-attachment: fixed;
 }
 
-nav,
-footer {
+nav{
     background-color: #2196F3;
     color: white;
     font-size: 20px;
+}
+
+main{
+    margin-top: 47px;
 }
 
 .section-title {
@@ -31,6 +34,7 @@ footer {
     font-size: 30px;
     margin-bottom: 30px;
 }
+
 
 /***************Nav Bar*****************/
 nav {
@@ -67,6 +71,14 @@ nav ul li {
     padding: 10px;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+nav ul li a:hover{
+    font-size: 23px;
+}
 /*****************Bio***************/
 .bio .bio-img {
     height: 100vh;
@@ -152,11 +164,10 @@ nav ul li {
     color: black;
 }
 
-.projects .proj-lang .css-logo {
-    width: 39px;
+.proj-lang .css-logo, .proj-lang .html-logo {
+    width: 32px;
 }
 
-section {
-    min-height: 300px;
-
+.skills .css-logo, .skills .html-logo{
+    width: 50px;
 }
