@@ -19,15 +19,15 @@ body {
     background-attachment: fixed;
 }
 
-nav{
-    background-color: #2196F3;
-    color: white;
-    font-size: 20px;
-}
 
 main{
-    margin-top: 47px;
+    margin-top: 50px;
 }
+
+.margin80{
+    margin-top:80px;
+}
+
 
 .section-title {
     font-family: 'Raleway', sans-serif;
@@ -37,22 +37,44 @@ main{
 
 
 /***************Nav Bar*****************/
+
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
-    padding-left: 40px;
-    padding-right: 40px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #2196F3;
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
 }
 
-nav .nav-links {
+nav .mobile-menu{
+    align-self: center;
+}
+
+nav .mobile-menu img:hover{
+    cursor: pointer;
+}
+
+nav .main-nav{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.no-display{
+    display: none;
+}
+
+.links-flex{
+    display:flex;
+    justify-content: space-around;
+    font-size: 15px;
 }
 
 nav h1 {
@@ -81,13 +103,17 @@ nav ul li a:hover{
 }
 /*****************Bio***************/
 .bio .bio-img {
-    height: 100vh;
+    height: 95vh;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-content: flex-start;
-    padding: 100px;
+    padding: 10px;
+}
+
+.bio .scroll-icon{
+    align-self: center;
 }
 
 .bio .name,
@@ -105,7 +131,6 @@ nav ul li a:hover{
 
 .section {
     background-color: white;
-    max-width: 1100px;
     margin: 10px auto;
     padding: 10px;
     text-align: left;
@@ -122,14 +147,12 @@ nav ul li a:hover{
 }
 
 .projects .proj-title {
-    width: 550px;
     margin: 20px auto;
     font-size: 20px;
     font-weight: bold;
 }
 
 .projects .proj-img {
-    width: 650px;
     margin: 0 auto;
 }
 
@@ -138,16 +161,14 @@ nav ul li a:hover{
 }
 
 .projects .proj-desc {
-    width: 500px;
     margin: 15px auto;
 }
 
 .projects .proj-links {
     display: flex;
     justify-content: space-between;
-    width: 500px;
     padding-bottom: 10px;
-    margin: 15px auto;
+    margin: 15px 10px;
     border-bottom: 1px lightgrey solid;
 }
 
@@ -168,6 +189,96 @@ nav ul li a:hover{
     width: 32px;
 }
 
+/*************************about me*************************/
+
 .skills .css-logo, .skills .html-logo{
     width: 50px;
+}
+
+/*************************responsive****************/
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: 
+    .proj-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }*/
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    nav{
+
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .nav-links {
+        display: flex;
+    }
+
+    nav .mobile-menu{
+        display: none;
+    }
+
+    .projects .proj-links {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin: 15px 10px;
+        border-bottom: 1px lightgrey solid;
+    }
+
+    .bio .bio-img{
+        padding: 50px;
+        justify-content: space-around;
+    }
+
+    .projects .proj-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .projects .proj-card{
+        min-width: 500px;;
+        max-width: 45%
+    }
+
+    /* For desktop: 
+    .bio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .bio-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bio-desc {
+        width: 500px;
+    }
+
+    .bio-img {
+        width: 500px;
+        margin: 0;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .proj-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }*/
+
+
 }

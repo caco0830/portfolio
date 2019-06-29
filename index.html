@@ -8,16 +8,22 @@
     <meta name="description" content="Portfolio for Carlo Coria">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
     <header>
-        <nav role="navigation">
-            <h1 class="nav-label">Carlo's Resume</h1>
-            <ul class="nav-links">
+        <nav role="navigation" class="nav">
+            <div class="main-nav">
+                <h1 class="nav-label">Carlo's Resume</h1>
+                <div class="mobile-menu">
+                    <img src="./images/icons/white-menu.png" alt="">
+                </div>
+            </div>
+            <ul class="nav-links no-display">
                 <li class="nav-items"><a href="#projects">Projects</a></li>
                 <li class="nav-items"><a href="#about">About Me</a></li>
-
                 <li class="nav-items"><a href="#about">Skills</a></li>
                 <li class="nav-items"><a href="#about">Contact</a></li>
             </ul>
@@ -26,8 +32,13 @@
     <main role="main">
         <section class="bio">
             <div class="bio-img">
-                <div class="name">Hey, I'm Carlo Coria</div>
-                <div class="description">Full-Stack Developer</div>
+                <div class="headline">
+                    <div class="name">Hey, I'm Carlo Coria</div>
+                    <div class="description">Full-Stack Developer</div>
+                </div>
+                <div class="scroll-icon">
+                        <img src="./images/icons/down-arrow.png" alt="">
+                    </div>
             </div>
             <a name="projects"></a>
         </section>
@@ -46,39 +57,38 @@
                     <div class="proj-desc">
                         Basic Quiz application used to showcase design responsiveness and event listeners.
                     </div>
+                    <div class="proj-lang">
+                        <img class="html-logo" src="./images/icons/html5-plain.svg" alt="">
+                        <img class="css-logo" src="./images/icons/css3-plain.svg" alt="">
+                    </div>
                     <div class="proj-links">
                         <a href="https://caco0830.github.io/quiz-app/">View App &rarr;</a>
                         <a href="https://github.com/caco0830/quiz-app">View Code &rarr;</a>
+                    </div>
+                </div>
+            
+                <div class="proj-card">
+                    <div class="proj-img">
+                        <a href="https://caco0830.github.io/quiz-app/">
+                            <img src="./images/screenshots/quiz.png" alt="Quiz screenshot">
+                        </a>
+                    </div>
+                    <div class="proj-title">
+                        World Cup Quiz
+                    </div>
+                    <div class="proj-desc">
+                        Basic Quiz application used to showcase design responsiveness and event listeners.
                     </div>
                     <div class="proj-lang">
                         <img class="html-logo" src="./images/icons/html5-plain.svg" alt="">
                         <img class="css-logo" src="./images/icons/css3-plain.svg" alt="">
                     </div>
-                </div>
-            </div>
-            <div class="proj-cards">
-                    <div class="proj-card">
-                        <div class="proj-img">
-                            <a href="https://caco0830.github.io/quiz-app/">
-                                <img src="./images/screenshots/quiz.png" alt="Quiz screenshot">
-                            </a>
-                        </div>
-                        <div class="proj-title">
-                            World Cup Quiz
-                        </div>
-                        <div class="proj-desc">
-                            Basic Quiz application used to showcase design responsiveness and event listeners.
-                        </div>
-                        <div class="proj-links">
-                            <a href="https://caco0830.github.io/quiz-app/">View App &rarr;</a>
-                            <a href="https://github.com/caco0830/quiz-app">View Code &rarr;</a>
-                        </div>
-                        <div class="proj-lang">
-                            <img class="html-logo" src="./images/icons/html5-plain.svg" alt="">
-                            <img class="css-logo" src="./images/icons/css3-plain.svg" alt="">
-                        </div>
+                    <div class="proj-links">
+                        <a href="https://caco0830.github.io/quiz-app/">View App &rarr;</a>
+                        <a href="https://github.com/caco0830/quiz-app">View Code &rarr;</a>
                     </div>
                 </div>
+            </div>
             <a name="about"></a>
         </section>
         <section name="about" class="about section">
