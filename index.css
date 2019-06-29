@@ -1,46 +1,89 @@
-* {
-    box-sizing: border-box;
+@font-face {
+    font-family:'Raleway';
+    src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', Courier, monospace;
+}
+
+
+
 body {
-    text-align: center;
+    margin: 0;
+    background: url(./images/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 nav,
 footer {
-    padding: 1% 0;
-    background-color: #aaa;
+    background-color: #2196F3;
+    color:white;
+    font-size: 20px;
+    padding: 1px;
 }
-
+/***************Nav Bar*****************/
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 10;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header {
-    padding: 12% 0;
+nav .nav-links{
+    display: flex;
 }
 
-.bio-img {
-    width: 750px;
-    height: 500px;
-    background-color: white;
+nav h1{
+    margin: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+nav ul li {
+    float: right;
+    display: inline;
+    padding: 10px;
+}
+
+/*****************Bio***************/
+.bio .bio-img {
+    height: 100vh;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 100px;
+}
+
+.bio .name, .bio .description{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.bio .name{
+    font-size: 60px;
 }
 
 .headline {
     background-color: white;
     width: 500px;
-    margin: 30px auto;
-}
-
-.bio {
-    background-color: white;
-    width: 750px;
-    height: 100px;
     margin: 30px auto;
 }
 
@@ -84,17 +127,7 @@ header {
     margin: 15px auto;
 }
 
-
-
-
-
-section {
-    min-height: 180px;
-    padding: 5% 0;
-    background-color: #bbb;
-}
-
 section {
     min-height: 300px;
-    background: lightgrey;
+    
 }
