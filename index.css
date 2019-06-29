@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+nav,
+footer {
+    padding: 1% 0;
+    background-color: #aaa;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+header {
+    padding: 12% 0;
+}
+
+.bio-img {
+    width: 750px;
+    height: 500px;
+    background-color: white;
+    margin: auto;
+}
+
+.headline {
+    background-color: white;
+    width: 500px;
+    margin: 30px auto;
+}
+
+.bio {
+    background-color: white;
+    width: 750px;
+    height: 100px;
+    margin: 30px auto;
+}
+
+.projects {
+    background-color: white;
+    width: 750px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.projects .proj-card {
+    background-color: lightgrey;
+    padding: 5px
+}
+
+.projects .proj-title {
+    width: 550px;
+    height: 20px;
+    background: white;
+    margin: 20px auto;
+}
+
+.projects .proj-img {
+    width: 650px;
+    height: 350px;
+    background: white;
+    margin: 0 auto;
+}
+
+.projects .proj-desc {
+    width: 500px;
+    height: 100px;
+    background: white;
+    margin: 15px auto;
+}
+
+.projects .proj-links {
+    width: 500px;
+    height: 20px;
+    background: white;
+    margin: 15px auto;
+}
+
+
+
+
+
+section {
+    min-height: 180px;
+    padding: 5% 0;
+    background-color: #bbb;
+}
+
+section {
+    min-height: 300px;
+    background: lightgrey;
+}
