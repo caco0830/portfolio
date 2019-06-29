@@ -1,18 +1,19 @@
 @font-face {
-    font-family:'Raleway';
+    font-family: 'Raleway';
     src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
+    src: url(https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap);
+    src: url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed&display=swap);
+    src: url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Raleway', Courier, monospace;
+    font-family: 'Roboto', Courier, monospace;
 }
-
-
 
 body {
     margin: 0;
-    background: url(./images/background.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,10 +22,16 @@ body {
 nav,
 footer {
     background-color: #2196F3;
-    color:white;
+    color: white;
     font-size: 20px;
-    padding: 1px;
 }
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
 /***************Nav Bar*****************/
 nav {
     position: fixed;
@@ -40,18 +47,18 @@ nav {
     align-items: center;
 }
 
-nav .nav-links{
+nav .nav-links {
     display: flex;
 }
 
-nav h1{
+nav h1 {
     margin: 5px;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 nav ul li {
@@ -71,63 +78,85 @@ nav ul li {
     padding: 100px;
 }
 
-.bio .name, .bio .description{
+.bio .name,
+.bio .description {
     color: white;
     font-weight: bold;
     font-size: 40px;
 }
 
-.bio .name{
+.bio .name {
     font-size: 60px;
 }
 
-.headline {
+/*******************Projects*****************/
+
+.section {
     background-color: white;
-    width: 500px;
-    margin: 30px auto;
+    max-width: 1100px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
 }
 
-.projects {
-    background-color: white;
-    width: 750px;
-    margin: 0 auto;
-    padding: 10px;
+.projects .proj-cards {
+    text-align: center;
 }
 
 .projects .proj-card {
-    background-color: lightgrey;
-    padding: 5px
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects .proj-title {
     width: 550px;
-    height: 20px;
-    background: white;
     margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .projects .proj-img {
     width: 650px;
-    height: 350px;
-    background: white;
     margin: 0 auto;
+}
+
+.projects .proj-img img {
+    width: 100%;
 }
 
 .projects .proj-desc {
     width: 500px;
-    height: 100px;
-    background: white;
     margin: 15px auto;
 }
 
 .projects .proj-links {
+    display: flex;
+    justify-content: space-between;
     width: 500px;
-    height: 20px;
-    background: white;
+    padding-bottom: 10px;
     margin: 15px auto;
+    border-bottom: 1px lightgrey solid;
+}
+
+.projects .proj-links a {
+    color: red;
+    text-decoration: none;
+}
+
+.projects .proj-links a:hover {
+    text-decoration: underline;
+}
+
+.projects .proj-links a:active {
+    color: black;
+}
+
+.projects .proj-lang .css-logo {
+    width: 39px;
 }
 
 section {
     min-height: 300px;
-    
+
 }
