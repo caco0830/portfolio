@@ -1,16 +1,42 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(https://fonts.googleapis.com/css?family=Raleway&display=swap);
+    src: url(https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap);
+    src: url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed&display=swap);
+    src: url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+}
+
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', Courier, monospace;
 }
 
 body {
-    text-align: center;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-nav,
-footer {
-    padding: 1% 0;
-    background-color: #aaa;
+
+main{
+    margin-top: 50px;
 }
+
+.margin80{
+    margin-top:80px;
+}
+
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+/***************Nav Bar*****************/
 
 nav {
     position: fixed;
@@ -18,18 +44,81 @@ nav {
     left: 0;
     right: 0;
     z-index: 10;
+
+    background-color: #2196F3;
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
 }
 
-header {
-    padding: 12% 0;
+nav .mobile-menu{
+    align-self: center;
 }
 
+<<<<<<< HEAD
 .bio-img {
     height: 500px;
     background-color: white;
-    margin: auto;
+=======
+nav .mobile-menu img:hover{
+    cursor: pointer;
 }
 
+nav .main-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.no-display{
+    display: none;
+}
+
+.links-flex{
+    display:flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+nav h1 {
+    margin: 5px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: right;
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+nav ul li a:hover{
+    font-size: 23px;
+}
+/*****************Bio***************/
+.bio .bio-img {
+    height: 95vh;
+>>>>>>> features
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 10px;
+}
+
+<<<<<<< HEAD
 .headline {
     background-color: white;
     margin: 30px auto;
@@ -39,15 +128,42 @@ header {
     background-color: white;
     height: 100px;
     margin: 30px auto;
+=======
+.bio .scroll-icon{
+    align-self: center;
 }
 
-.projects {
+.bio .name,
+.bio .description {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.bio .name {
+    font-size: 60px;
+>>>>>>> features
+}
+
+/*******************Projects*****************/
+
+.section {
     background-color: white;
+<<<<<<< HEAD
     margin: 0 auto;
+=======
+    margin: 10px auto;
+>>>>>>> features
     padding: 10px;
+    text-align: left;
+}
+
+.projects .proj-cards {
+    text-align: center;
 }
 
 .projects .proj-card {
+<<<<<<< HEAD
     background-color: lightgrey;
     padding: 5px;
     margin-bottom: 10px;
@@ -56,22 +172,43 @@ header {
 
 .projects .proj-title {
     background: white;
+=======
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .proj-title {
+>>>>>>> features
     margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .projects .proj-img {
+<<<<<<< HEAD
     height: 250px;
     background: white;
+=======
+>>>>>>> features
     margin: 0 auto;
 }
 
+.projects .proj-img img {
+    width: 100%;
+}
+
 .projects .proj-desc {
+<<<<<<< HEAD
     height: 100px;
     background: white;
+=======
+>>>>>>> features
     margin: 15px auto;
 }
 
 .projects .proj-links {
+<<<<<<< HEAD
     height: 20px;
     background: white;
     margin: 15px auto;
@@ -92,17 +229,108 @@ section {
 @media only screen and (min-width: 600px) {
 
     /* For tablets: */
+=======
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin: 15px 10px;
+    border-bottom: 1px lightgrey solid;
+}
+
+.projects .proj-links a {
+    color: red;
+    text-decoration: none;
+}
+
+.projects .proj-links a:hover {
+    text-decoration: underline;
+}
+
+.projects .proj-links a:active {
+    color: black;
+}
+
+.proj-lang .css-logo, .proj-lang .html-logo {
+    width: 32px;
+}
+
+/*************************about me*************************/
+
+.skills .css-logo, .skills .html-logo{
+    width: 50px;
+}
+
+/*************************responsive****************/
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: 
+>>>>>>> features
     .proj-cards {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+<<<<<<< HEAD
     }
+=======
+    }*/
+>>>>>>> features
 
 }
 
 @media only screen and (min-width: 1000px) {
 
+<<<<<<< HEAD
     /* For desktop: */
+=======
+    .section{
+        max-width: 1000px;
+    }
+    nav{
+
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav .nav-links {
+        display: flex;
+    }
+
+    nav .mobile-menu{
+        display: none;
+    }
+
+    .projects .proj-links {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        margin: 15px 10px;
+        border-bottom: 1px lightgrey solid;
+    }
+
+    .bio .bio-img{
+        padding: 50px;
+        justify-content: space-around;
+    }
+
+    .projects .proj-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .projects .proj-card{
+        min-width: 500px;
+        max-width: 45%
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    /* For desktop: 
+>>>>>>> features
     .bio {
         display: flex;
         flex-direction: row;
@@ -131,5 +359,12 @@ section {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+<<<<<<< HEAD
     }
 }
+=======
+    }*/
+
+
+}
+>>>>>>> features
