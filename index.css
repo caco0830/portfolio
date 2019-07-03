@@ -68,7 +68,7 @@ nav .main-nav{
 }
 
 .no-display{
-    display: none;
+    display: none !important;
 }
 
 .links-flex{
