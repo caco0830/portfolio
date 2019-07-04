@@ -91,6 +91,7 @@ nav ul li {
     float: right;
     display: inline;
     padding: 10px;
+    position: relative;
 }
 
 nav ul li a{
@@ -98,9 +99,9 @@ nav ul li a{
     color:white;
 }
 
-nav ul li a:hover{
+/* nav ul li a:hover{
     font-size: 23px;
-}
+} */
 /*****************Bio***************/
 .bio .bio-img {
     height: 95vh;
